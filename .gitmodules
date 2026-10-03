@@ -1,0 +1,3 @@
+[submodule "UltraData-Math"]
+	path = UltraData-Math
+	url = git@github.com:UltraData-OpenBMB/UltraData-Math.git
