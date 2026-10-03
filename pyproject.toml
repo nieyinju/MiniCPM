@@ -1,0 +1,28 @@
+[project]
+name = "minicpm"
+version = "0.1.0"
+description = "MiniCPM 环境：推理 / 微调 / 量化（含 HuggingFace 镜像与下载目录配置）"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.4.0",
+    "transformers>=4.36.2",
+    "accelerate>=0.25.0",
+    "sentencepiece>=0.2.0",
+    "datasets>=2.14.0",
+    "huggingface-hub>=0.24.0",
+    "gradio>=4.26.0",
+    "Pillow>=10.3.0",
+    "timm>=0.9.16",
+    "openai>=1.17.1",
+    "tiktoken>=0.6.0",
+    "loguru>=0.7.2",
+    "sentence-transformers>=2.6.1",
+    "sse-starlette>=2.1.0",
+]
+
+# 清华 PyPI 镜像（国内加速）
+[[tool.uv.index]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
